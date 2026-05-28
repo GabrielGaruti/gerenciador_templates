@@ -83,7 +83,7 @@ function fillTemplate(content: string, values: Record<string, string>) {
 }
 
 function serializeTemplates(nextTemplates: Template[]) {
-  return nextTemplates.map(({ originalFile: _f, ...template }) => template);
+  return nextTemplates.map((template) => template);
 }
 
 function escapeRegExp(value: string) {
